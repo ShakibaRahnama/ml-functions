@@ -1,0 +1,4 @@
+usage: json2csv.py [-h] --json_file JSON_FILE [--out_dir OUT_DIR] --dataset
+                   {ALL_FRAMES_subvideos,Colorectal_ret,Adrenal_left,Pituitary,Colorectal_Go,Colorectal_Go_raw,Bariatric,tool_measurement,ziyad_test,ziyad_tti,ziyad_tti_check}
+                   [--colour_map {Colorectal_Go}]
+json2csv.py: error: argument --dataset: invalid choice: 'ziyad_tt' (choose from 'ALL_FRAMES_subvideos', 'Colorectal_ret', 'Adrenal_left', 'Pituitary', 'Colorectal_Go', 'Colorectal_Go_raw', 'Bariatric', 'tool_measurement', 'ziyad_test', 'ziyad_tti', 'ziyad_tti_check')
