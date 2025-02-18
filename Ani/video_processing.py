@@ -6,7 +6,7 @@ import random
 import subprocess
 
 
-### Functions to facilitate processing RGB videos
+### Functions to facilitate processing RGB videos ###
 
 # Get frame rate of raw videos
 def get_video_frame_rate(video_path):
