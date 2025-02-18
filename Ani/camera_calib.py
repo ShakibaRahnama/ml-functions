@@ -2,10 +2,7 @@ import numpy as np
 import cv2
 import os
 import glob
-from utils import extract_frames_monodepth2
 
-
-### CAMERA CALIBRATION ###
 
 # Compute camera calibration parameters
 def calibrate_camera(calibration_images_dir, checkerboard_size, sensor_width_mm, image_width_pixels, output_dir):
@@ -86,19 +83,3 @@ def calibrate_camera(calibration_images_dir, checkerboard_size, sensor_width_mm,
     else:
         print("❌ Camera Calibration Failed.")
         return None, None, None, None
-    
-    
-if __name__ == '__main__':
-    
-    dir_g = "/cluster/projects/brudnogroup/ani/Bariatric_endoscopy/Raw_data/Camera_calibration"
-    videos_dir = f"{dir_g}/New_20250120"
-    output_dir = f"{dir_g}/Output_frames"
-    calibration_images_dir = f"{dir_g}/Calibration_frames/202501201749_07"
-    checkerboard_size = (7, 9)  # checkerboard size (rows, cols)
-    results_dir = f"{dir_g}/Results"
-    
-    # # Extract frames from a video file
-    # extract_frames_monodepth2(videos_dir, output_dir, skip_frames=0, custom_fps=1)
-    
-    # Perform camera calibration
-    calibrate_camera(calibration_images_dir, checkerboard_size, results_dir)
